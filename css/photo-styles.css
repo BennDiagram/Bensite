@@ -1,0 +1,207 @@
+
+.background-wrapper {
+    background-image: url('../media/misc/church3-compressedbg.jpg');
+    background-size: 150%;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.336);
+    background-blend-mode: overlay;
+    z-index: -2;
+  }
+  
+@media screen and (max-width: 500px) {
+.background-wrapper {
+    background-image: url('../media/concert-gallery/Church3-mobile.jpg');
+    background-size: 200%;
+}
+}
+
+
+.navbar.scrolled {
+    background-color:#290e25c2;
+  }
+
+.text{
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  padding: 20px;
+  letter-spacing: normal;
+  text-align: justify;
+  color: white;
+}
+
+@media screen and (max-width: 678px) {
+    .text{
+        font-size: 20px;
+    }
+}
+
+.text-title{
+  padding-top: 20px;
+  font-size: 30px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+  letter-spacing: normal;
+  text-align: left;
+  color:rgb(253, 246, 171);
+}
+
+.text-container{
+  width: 900px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+}
+
+.buttons{
+    display:flex;
+    justify-content: space-between;
+    width:auto;
+}
+.buttons button{
+    background-color: transparent;
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+
+    /*margin: 15px;*/
+}
+
+.buttons button:hover{
+    color: #B07028;
+}
+
+.buttons button.active {
+    color:#B07028;
+}
+
+.gallery1-container{
+    width: auto;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery2-container{
+    padding: 30px;
+    display: none;
+    justify-content: center;
+}
+
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:30px;
+}
+
+
+
+.gallery img {
+    max-width: 250px;
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Ensures images are square */
+    object-fit:cover; /* Ensures the image covers the container and preserves aspect ratio */
+
+}
+
+.gallery a {
+    display:block;
+    position: relative;
+    width: fit-content;
+    aspect-ratio: 1 /1;
+    overflow:hidden;
+    transition: transform 0.3s ease-in-out;
+}
+.gallery a:hover {
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+@media screen and (max-width: 1250px){
+    .gallery {
+        grid-template-columns: repeat(4,1fr);
+
+    }
+}
+
+
+@media screen and (max-width: 1050px){
+    .gallery {
+        grid-template-columns: repeat(3,1fr);
+
+    }
+}
+
+@media screen and (max-width: 678px){
+    .gallery {
+        grid-template-columns: repeat(2,1fr);
+
+    }
+}
+
+.gallery a::after {
+    content: "CLICK TO ENLARGE";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.gallery a:hover::after {
+    opacity: 1;
+  }
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.overlay iframe {
+    width: 80%;
+    height: 80%;
+    border: none;
+}
+
+.overlay .close-btn {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 18px;
+}

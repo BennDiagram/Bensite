@@ -1,0 +1,215 @@
+
+.background-wrapper::after {
+  background-image: url('../media/concert-gallery/Church5.jpg');
+  background-color: rgba(0, 0, 0, 0.336);
+  background-blend-mode: overlay;
+  z-index: -2;
+  filter: grayscale(100%);
+
+}
+
+
+.thumbnail{
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.thumbnail img {
+  width: 100%;
+  position: block;
+}
+
+
+.hover-text {
+  position: absolute;
+  top:40%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 30px;
+  z-index: 300;
+  text-align: left;
+  background-color: black;
+}
+
+.thumbnail img {
+  width: 100%;
+  position: block;
+}
+
+.thumbnail:hover .hover-text {
+  opacity: 1;
+}
+
+
+.features {
+  display: flex;
+}
+
+.feature-item {
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 50%;
+}
+.item-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.item-container img {
+  width: 300px;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.overlay iframe {
+  width: 80%;
+  height: 80%;
+  border: none;
+}
+
+.overlay .close-btn {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1220px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .feature-item {
+    width: 80%;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .background-wrapper {
+    background-image: url('../public/album-backdrop.jpg');
+  }
+}
+
+.navbar.scrolled {
+  background-color:#000000c9;
+}
+
+.album-header{
+  font-family: "cheap-pine-sans";
+  color: rgb(253, 246, 171);
+  text-align: center;
+  margin: 0;
+  padding: 0px;
+}
+
+.album-header p {
+  margin: 10px;
+}
+.album{
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.album img {
+  margin: 0;
+  padding: 0;
+}
+
+.text1{
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  letter-spacing: normal;
+  text-align: left;
+  color:rgb(253, 246, 171);
+}
+
+.text2{
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  letter-spacing: normal;
+  text-align: left;
+  color:rgb(253, 246, 171);
+}
+
+
+.text-title{
+  padding-top: 20px;
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+  letter-spacing: normal;
+  text-align: left;
+  color:rgb(253, 246, 171);
+}
+
+.text-container{
+  width: 50%;
+  padding-bottom: 50px;
+}
+
+
+
+@media screen and (max-width: 840px)
+{
+  .album {
+    width: 80%;
+  flex-direction: column;
+  }
+
+  .text p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 678px)
+{
+  .text-container {
+    width: 85%;
+    }
+  .text2 {
+    font-size: 20px;
+  }
+
+  .item-container {
+    flex-direction: column;
+  }
+
+}

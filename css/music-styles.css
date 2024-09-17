@@ -1,0 +1,66 @@
+
+.background-wrapper {
+}
+
+
+.background-wrapper::after {
+  background-image: url('../media/concert-gallery-lowres/ChurchBackground.jpg');
+  background-color: rgba(0, 0, 0, 0.575);
+  background-blend-mode: overlay;
+  z-index: -2;
+}
+
+.navbar.scrolled {
+  background-color:#290e25c2;
+}
+
+
+.text{
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  padding: 20px;
+  letter-spacing: normal;
+  text-align: justify;
+  color: white;
+}
+
+.music-container{
+  width: 40%; 
+  height: 500px;
+}
+
+@media screen and (max-width: 678px) {
+    .text{
+        font-size: 20px;
+    }
+    .music-container{
+      width: 80%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+  .music-container{
+    width: 80%;
+  }
+}
+
+.text-title{
+  padding-top: 20px;
+  font-size: 30px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+  letter-spacing: normal;
+  text-align: left;
+  color:rgb(253, 246, 171);
+}
+
+.text-container{
+  width: 900px;
+}
+

@@ -16,6 +16,10 @@
     <link rel="stylesheet" type="text/css" href="css/icons.css">
     <link rel="icon" href="./media/concert-gallery/Church5.jpg" type="image/png">
 
+    <link rel="stylesheet" href="css/photo-styles.css">
+    <link rel="stylesheet" href="dist/simple-lightbox.css">
+
+
 
 
 <title>Ben Orr Portfolio Website</title>
@@ -23,6 +27,33 @@
 
 <body>
 
+    <div class="timeline">
+        <div class="timeline-icon" id="timeline-icon"></div>
+        
+        <div style="display: flex; flex-direction: row; align-items: center;">
+            <div class="timeline-point" id="point-1">About Me</div>
+        </div>
+
+        <div class="timeline-filler"></div>
+
+        <div style="display: flex; flex-direction: row; align-items: center;">
+            <div class="timeline-point" id="point-2">The Band</div>
+        </div>
+
+        <div class="timeline-filler"></div>
+
+        <div style="display: flex; flex-direction: row; align-items: center;">
+            <div class="timeline-point" id="point-3">Research</div>
+        </div>
+        <div class="timeline-filler"></div>
+
+        
+        <div style="display: flex; flex-direction: row; align-items: center;">
+            <div class="timeline-point" id="point-3">Internships</div>
+        </div>
+
+      </div>
+<!--
     <nav class="navbar">
         <div class="nav-content">
             <a href="index.html">HOME</a>
@@ -62,7 +93,7 @@
                 </svg>
         </div>
     </nav>
-
+-->
 
     <div class="background-wrapper"></div>
     <!--SIDEBAR MENU-->
@@ -77,45 +108,140 @@
         <a href="the-album.html" class="nav-menu">THE ALBUM</a>
     </div>
     
-    <div class="page-content">
+    <div class="page-content">\
+
+    <!--
         <div class="fake-navbar">
             <div>
             </div>
         </div>
-
-        <section class="header-container" style="align-items: flex-start; padding-left: 10%; padding-right: 10%;">
-        <div style="padding-left:5%; width: 50%; display: flex; flex-direction: column; align-items: flex-start;">
-            <h1 class="title">Ben Orr</h1>
-            <h2 class="subtitle1">STUDENT/MUSICIAN/ARTIST |  Pittsburgh, PA </h2>
-            <h3 class="subtitle2">I do a lot of things. I'll tell you about them here.</h3>
-
-            <h3 class="subtitle2">First, I'm the guitarist/manager of a 
-                popular local funk band called Funky Lamp, and I work with a local 
-                organization called Post Genre on visuals, branding, and marketing. I've been 
-                an visual artist all my life, and I've found opportunities in both 'jobs' to
-                use those skills. I also love to cook--I consider it the best way to explore 
-                other parts of the world when you lack the time or money to travel. Cooking 
-                without recipes is where I find the most joy. I'm also learning saxophone.
-                Academically, I'm double majoring in Information Science and Digital Narrative & 
-                Interactive Design, while pursuing a certificate in Digital Media. 
-                At one time, I was also a 3D Prop & Environment artist. When I'm not doing
-                any of the things mentioned above, I'm either reading a book or endlessly scrolling on 
-                Facebook Marketplace</h3>
-
-
-            </ul>
-            <div class="social-links">
-                <a href="https://open.spotify.com/artist/3JnvdCfcYZJtPtJSahlsLw?si=e14p-dTzQquFpPeiCZYkyg" target="_blank"><img src="./media/icons/spotify@2x.png" alt="Spotify"></a>
-                <a href="https://www.youtube.com/@FunkyLamp" target="_blank"><img src="./media/icons/youtube-1@2x.png" alt="YouTube"></a>
-                <a href="https://www.instagram.com/funkylamppgh/" target="_blank"><img src="./media/icons/insta@2x.png" alt="Instagram"></a>
-                <a href="https://www.tiktok.com/@funkylamppgh" target="_blank"><img src="./media/icons/tiktok-1@2x.png" alt="TikTok"></a>
-            </div>
-        </div>
-        <div style="padding-right:5%; width:50%; text-align: center; filter: drop-shadow(0px 0px 10px black);">
-            <img src="media/band-gallery/47Mag1.jpg" style="width: 75%;" alt="Ben"></a>\
+    -->
+        <section class="header-container" style="padding-left: 10%; padding-right: 10%;" id="section1">
+        <div style="width: 50%; display: flex; flex-direction: column; align-items: center; margin-top: 4%;">
             
+            <div style="width: 150px; height: 150px; border-radius: 50%; overflow: hidden;">
+                <img src="media/band-gallery/47Mag1.jpg" alt="Ben" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div>
+                <h1 class="title">BEN ORR</h1>
+                <h2 class="subtitle1">STUDENT/MUSICIAN/ARTIST |  Pittsburgh, PA </h2>
+                <h3 class="subtitle2" style="text-align: center;">I do a lot of things. I'll tell you about them here.</h3>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/benaorr/" target="_blank"><img style="width: 30px" src="./media/icons/linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://open.spotify.com/artist/3JnvdCfcYZJtPtJSahlsLw?si=e14p-dTzQquFpPeiCZYkyg" target="_blank"><img src="./media/icons/spotify@2x.png" alt="Spotify"></a>
+                    <a href="https://www.youtube.com/@Benjorrmin" target="_blank"><img src="./media/icons/youtube-1@2x.png" alt="YouTube"></a>
+                    <a href="https://www.instagram.com/benjorrmin/" target="_blank"><img src="./media/icons/insta@2x.png" alt="Instagram"></a>
+                </div>
+            </div>
+
         </div>
+        <div style="width:700px; text-align: justify; filter: drop-shadow(0px 0px 10px black);">
+            
+            <h3 class="subtitle2" style="padding-top: 50px;">I'm the guitarist/manager of a 
+                popular local funk band called Funky Lamp. I also work with a local 
+                organization called Post Genre, where I design visuals, branding, and other marketing materials. I've also been 
+                an visual artist all my life, and have done a lot of art for the local music scene. 
+                <br> <br>In my free time, you'll find me cooking, reading, or endlessly scrolling
+                Facebook Marketplace. I found a great deal on a vintage saxophone a few months ago, 
+                so I've been learning to play that, too. At one time, I was also a 3D Prop & Environment artist. 
+                Lastly, as you can probably see, I mess around with web development. 
+                <br><br>I'm currently a senior at the University of Pittsburgh, where I'm pursuing a double major in 
+                Information Science and Digital Narrative & 
+                Interactive Design, alongside certificates in Digital Media and Information System Design. I'm very excited to apply my degrees
+                post-graduation, where I plan to be a server and small-time drug dealer for the forseeable future.  
+
+            </h3>
+        </div>
+
+        
         </section>
+
+        
+
+
+        <section class="header-container" style="padding-left: 10%; padding-right: 10%;" id="section2">
+            <div style="width: 50%; display: flex; flex-direction: column; align-items: center; margin-top: 4%;">
+                
+                <div>
+                    <h1 class="title" style="position:sticky; top: 300px; filter: drop-shadow(0px 0px 20px black);">THE BAND</h1>
+                    <img src="./media/concert-gallery/BlockParty1.jpg" style="width: 100%;">
+                </div>
+    
+            </div>
+            <div style="width:700px; text-align: justify; filter: drop-shadow(0px 0px 20px black);">
+            
+                <h3 class="subtitle2" style="padding-top: 50px;"> 
+                    I formed this band with our singer my freshman year, and it's been pretty much my entire life since then.
+                    I'm responsible for pretty much everything. I scheduling our practices and book and promote our shows. I design, screenprint, and sell our merchendise.
+                    I create all of our online media, which includes promotional material and video content I film with a multi-cam GoPro setup. 
+                    I maintain our social media presence and website. I also produce and direct the recording of our recorded material, which includes an EP we released in 2022,
+                    a single in 2023, and our full-length album that released in March.
+                </h3>
+                <div class="gallery1-container" style="display: flex; align-items: center;">
+                    <div class="gallery">
+                      <a href="media/misc/screen1.jpg" data-src="media/misc/screen1.jpg"><img src="media/misc/screen1.jpg" alt="" title="Design Preview"></a>
+                      <a href="media/misc/screen2.jpg" data-src="media/misc/screen2.jpg"><img src="media/misc/screen2.jpg" alt="" title="Transparency Sheet"></a>
+                      <a href="media/misc/screen3.jpg" data-src="media/misc/screen3.jpg"><img src="media/misc/screen3.jpg" alt="" title="Merch V1"></a>
+                      <a href="media/misc/screen4.jpg" data-src="media/misc/screen4.jpg"><img src="media/misc/screen4.jpg" alt="" title="Merch V2"></a>
+
+                    </div>
+                </div>
+            </div>
+    
+            
+            </section>
+
+            <section class="header-container" style="padding-left: 10%; padding-right: 10%;" id="section3">
+                <div style="width: 50%; display: flex; flex-direction: column; align-items: center; margin-top: 4%;">
+                    
+                    <div>
+                        <h1 class="title" style="position:sticky; top: 300px; filter: drop-shadow(0px 0px 20px black);">RESEARCH</h1>
+                        <img src="./media/misc/street.jpg" style="width: 100%;">
+                    </div>
+        
+                </div>
+                <div style="width:700px; text-align: justify; filter: drop-shadow(0px 0px 20px black);">
+                
+                    <h3 class="subtitle2" style="padding-top: 50px;"> 
+                        I haven't done any research, but I've tried hard enough that I think this deserves its own section. 
+                        I was undeclaired and wholly undecided until my second semester of Sophomore year. The following semester,
+                        a professor mentioned research during a lecture. I approached him after class and expressed my interest, but
+                        he told me that "nobody would want you, you don't have any skills." <br><br>Later that semester, I got in touch with 
+                        another professor expressing interest in an independent study to build the skills I might need to be useful
+                        as a research assistant in the School of Computing and Information. He was interested, but due to personal circumstances
+                        was on a sabbatical during that semester. These personal circumstances also prevented him from writing back to me 
+                        without 1-2 follow-up emails, and after about a month of one-sided communication, the add/drop deadline passedk, and I gave up.
+                        <br><br>
+                        I met with another professor that semester in search of advice on research opportunities. He directed me to ANOTHER professor
+                        to whom I had emailed earlier that year and never got a response. After a couple emails to this professor, he got back to me, 
+                        and he invited me to one of his research meetings that summer. While I had to leave early, I sent him an email that evening
+                        to follow up on the meeting. He didn't respond. I sent another. He didn't respond. I sent a third, desparate follow-up email, 
+                        and after not hearing anything back, I gave up on that, too.
+                    </h3>
+                </div>
+
+                <section class="header-container" style="padding-left: 10%; padding-right: 10%;" id="section4">
+                    <div style="width: 50%; display: flex; flex-direction: column; align-items: center; margin-top: 4%;">
+                        
+                        <div>
+                            <h1 class="title" style="position:sticky; top: 300px; filter: drop-shadow(0px 0px 20px black);">INTERNSHIPS</h1>
+                            <img src="./media/misc/notfound.png" style="width: 100%;">
+                        </div>
+            
+                    </div>
+                    <div style="width:700px; text-align: justify; filter: drop-shadow(0px 0px 20px black);">
+                    
+                        <h3 class="subtitle2" style="padding-top: 50px;"> 
+                            I haven't found any internships either--not for lack of trying. Since last November, I have applied to 72 internships
+                            ranging from IT and Data Analysis to Cyber Security, Marketing and PR, Records Management, Event Planning, HR, and 
+                            everything in between. I've met with four or five separate faculty members for guidance and advice. At their suggestions,
+                            I've been to career fairs and resume reviews. I have had two interviews, and, obviously, no offers. 
+                        </h3>
+                    </div>
+        
+                
+                </section>
         
         <div class="overlay" id="videoOverlay">
             <div class="close-btn" id="closeBtn">CLOSE</div>
@@ -123,8 +249,7 @@
         </div>
         <div class="item-container">
             <p class="subtitle1" style="letter-spacing: normal; width: 300px; font-size: 25px;">
-                Wow! You found a sticker. Click on it to see the rest 
-                of our merch in its three-dimensional glory.</p>
+                Wow! You found some band merch. Click on it to be taken to the Funky Lamp website.</p>
             <div class="gif-container">
                 <a href="merch.html"><img src="media/misc/stickerA.gif" alt="Tote Gif"></a>
             </div>
@@ -168,5 +293,72 @@
         "url": "https://funky-lamp.com"
         }
     </script>
+
+    <script>
+    document.addEventListener("scroll", function () {
+        // Get the icon and the points
+        const icon = document.getElementById("timeline-icon");
+        const points = document.querySelectorAll(".timeline-point");
+        const sections = document.querySelectorAll("section");
+      
+        // Get the current scroll position
+        let currentScroll = window.pageYOffset;
+      
+        sections.forEach((section, index) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+      
+          // Check if the current scroll position is within this section
+          if (currentScroll >= sectionTop -300 && currentScroll < sectionTop + sectionHeight -400) {
+            const point = points[index];
+            icon.style.top = point.offsetTop + "px"; // Move icon to the corresponding timeline point
+          }
+        });
+      });
+      </script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    // Select all timeline points
+    const timelinePoints = document.querySelectorAll('.timeline-point');
+
+    // Map points to corresponding sections based on their order
+    const sections = document.querySelectorAll('section');
+
+    timelinePoints.forEach((point, index) => {
+        point.addEventListener('click', () => {
+            // Get the top position of the corresponding section
+            const sectionTop = sections[index].offsetTop;
+
+            if (index === 0) {
+                window.scrollTo({
+                    top: sectionTop,  // No offset for the first section
+                    behavior: 'smooth'
+                });
+            } else {
+                window.scrollTo({
+                    top: sectionTop + 300,  // Add offset for other sections
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
+      </script>
+
+<script src="dist/simple-lightbox.js"></script>
+<script>
+
+    const gallery = new SimpleLightbox('.gallery a', {
+      captions: true,
+      captionDelay: 0,
+      closeText: "CLOSE",
+      overlayOpacity: .92,
+      sourceAttr: 'data-src'
+      // Add more options as needed
+    });
+</script>
+
+  
 </body></html>
 

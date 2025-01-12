@@ -1,0 +1,90 @@
+.collapsible {
+  background-color: #ffffff38;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 22px;
+  transition: background-color 0.3s ease;
+}
+
+.collapsible:hover {
+background-color: white;}
+
+.collapsible:hover h2{
+    color: black;
+  }
+.content {
+  max-height: 0; /* Initially hidden */
+  overflow: hidden; /* Hide content when collapsed */
+  transition: max-height 0.3s ease-out; /* Smooth expansion */
+  background-color: #ffffff1e;
+  padding: 0px 10px;
+  transition: all 0.3s ease;
+}
+
+.content p {
+  margin: 10px 0;
+}
+
+.expanded {
+  padding: 10px 10px;
+  transition: all 0.3s ease;
+}
+.profile {
+    animation: slideDown 0.5s ease forwards;
+    opacity: 0;
+    
+}
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%); /*start all the way on the right*/
+        opacity: 0; /*invisible, just in case*/
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+}
+@keyframes slideDown {
+    0% {
+        transform: translateY(100%); /*start all the way on the right*/
+        opacity: 0; /*invisible, just in case*/
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+.collapsible h2 { 
+    animation: slideIn 0.5s ease forwards;
+    opacity: 0;
+}
+
+
+/*
+
+document.addEventListener('DOMContentLoaded', function () {
+  const collapsibleButtons = document.querySelectorAll('.collapsible');
+
+  collapsibleButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      const content = this.nextElementSibling;
+
+      // Toggle between adding and removing the "active" class
+      this.classList.toggle('active');
+
+      // Check if the content is collapsed or expanded
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null; // Collapse
+      } else {
+        content.style.maxHeight = content.scrollHeight + 'px'; // Expand
+      }
+    });
+  });
+});
+
+*/

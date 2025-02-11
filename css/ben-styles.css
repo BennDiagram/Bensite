@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../css/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+  font-style: normal; 
+}
+
+
 .background-wrapper{
   position: fixed;
   top: 0;
@@ -263,8 +270,8 @@ body {
 
 
 .title{
-  font-family: "inika";
-  font-weight: 100;
+  font-family: "Inter";
+  font-weight: 200;
   font-size: 120px;
   letter-spacing: 17px;
   color: white;

@@ -1,8 +1,14 @@
+
 @font-face {
   font-family: 'Inter';
   src: url('../css/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
   font-style: normal; 
 }
+
+html {
+  overflow-x: hidden;
+}
+
 
 
 .background-wrapper{
@@ -16,29 +22,28 @@
   background-size: cover;
   background-position: center;
 }
-.background-wrapper::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-  }
 
-body::before{
-  content: "";
-  position: fixed; 
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.25);
-  z-index: -1;
+
+.background-wrapper::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+.page-content {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+
 
 h2 {
   font-size: 22px;
@@ -192,14 +197,20 @@ h2 {
   text-align: center;
 }
 
-
 .header-container{
-  padding-top: 30px;
-  text-align: left;
+  width: 100vw;
   display: flex;
-  flex-direction:column ;
-  justify-content: flex-start;
   align-items: center;
+  flex-direction: column;
+  container-type: inline-size;
+}
+
+.header {
+  width: 50%; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  margin-top: 4%;
 }
 
 .title_arial{
@@ -214,7 +225,9 @@ h2 {
 /* SROLLBAR THING */
 
 body {
+  margin: 0;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 /* Ensure consistent width for scrollbar across browsers */
@@ -269,25 +282,40 @@ body {
 }
 
 
+.profile {
+  width: 150px; 
+  height: 150px; 
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.profile-text {
+  width: min(90vw, 700px);
+  container-type: inline-size;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
 .title{
   font-family: "Inter";
+  
   font-weight: 200;
-  font-size: 120px;
+  font-size: 20cqi;
   letter-spacing: 17px;
   color: white;
   margin: 0;
   text-align: center;
+  letter-spacing: normal;
 }
 
 
-@media screen and (max-width: 450px) 
-{
-  .title {
-    font-size: 100px;
-  }  
-}
 .subtitle1{
-  font-size: 30px;
+  font-size: 5cqi;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 100;
   letter-spacing: 2px;
@@ -299,13 +327,14 @@ body {
 }
 
 .subtitle2{
-  font-size: 20px;
+  font-size: 4cqi;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: lighter;
   margin: 0;
   padding-top: 20px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: white;
+  font-style: italic;
 }
 
 
@@ -337,7 +366,8 @@ body {
   padding-top: 20px;
   scale: 100%;
   display: flex;
-  justify-content: space-evenly;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .social-links a {
@@ -444,5 +474,12 @@ p a {
 
 section {
   height: fit-content; /* Each section will take up the full viewport height */
-  padding: 20px;
+  padding: 20px 0px;
+}
+
+.selected-works {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
 }

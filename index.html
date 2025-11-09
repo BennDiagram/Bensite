@@ -14,7 +14,7 @@
 
     <!--ICON STYLESHEET-->
     <link rel="stylesheet" type="text/css" href="css/icons.css">
-    <link rel="icon" href="./media/concert-gallery/Church5.jpg" type="image/png">
+    <link rel="icon" href="./media/bensite/Church5.jpg" type="image/png">
 
     <link rel="stylesheet" href="css/photo-styles.css">
     <link rel="stylesheet" href="dist/simple-lightbox.css">
@@ -54,128 +54,8 @@
                 </div>
 
             </div>
-            <div class="collapsible-container">
-                
-                <h3 class="subtitle2" style="padding-top: 25px;">
-                    
-                    <div class="collapsible-section">
-                        <button class="collapsible">
-                            <h2><b>Education</b></h2>
-                        </button>
-                        <div class="content">
-                        <hr>
-                            <div class="table-row">
-                                <div class="left">School:</div>
-                                <div class="right">University of Pittsburgh - Pittsburgh Campus</div>
-                            </div>
-                        <hr>
-                            <div class="table-row">
-                                <div class="left">Majors:</div>
-                                <div class="right">Double Major in Information Science & 
-                                    <a href="https://www.sci.pitt.edu/academics/undergraduate-majors/digital-narrative-and-interactive-design#:~:text=Digital%20Narrative%20and%20Interactive%20Design,Academics" target="_blank" style="color: white;">
-                                    Digital Narrative and Interactive Design</a> (DNID)
-                                </div>
-                            </div>
-                        <hr>
-                            <div class="table-row">
-                                <div class="left">Certificates:</div>
-                                <div class="right">
-                                    <a href="https://www.cgs.pitt.edu/digital-media-certificate" target="_blank" style="color: white;">
-                                        Digital Media</a>
-                                </div>
-                            </div>
-                        <hr>
-                            <div class="table-row">
-                                <div class="left">Honors:</div>
-                                <div class="right">Summa Cum Laude </div>
-                            </div>
-                        <hr>
-                            <div class="table-row">
-                                <div class="left">Graduation:</div>
-                                <div class="right">April 2025</div>
-                            </div>
-                        <hr>
-                        </div>
-                    </div>
-
-                    <div class="collapsible-section">
-                        <button class="collapsible"><h2><b>Professional Skills</b></h2></button>
-                        <div class="content">
-                        <hr>
-                            <div class="table-row">
-                                <div class="left">Team/Project Management</div>
-                                <div class="right">Task delegation and oversight, scheduling, remote collaboration, budgeting and expense tracking
-                                </div>
-                            </div>
-                        <hr>
-                            <div class="table-row">
-                                <div class="left">Visual Direction & Design:</div>
-                                <div class="right">Web design and promotional content creation, merchandise conceptualization, design, and printing
-                                </div>
-                            </div>
-                        <hr>
-                            <div class="table-row">
-                                <div class="left">Communication:</div>
-                                <div class="right"> Public and press relations, copywriting
-                                </div>
-                            </div>
-                        <hr>
-                            <div class="table-row">
-                                <div class="left">Branding:</div>
-                                <div class="right">Launch campaign strategy and execution, merchandising, social media management, and press relations including interviews and press kit creation
-                                </div>
-                            </div>
-                        <hr>
-                            <div class="table-row">
-                                <div class="left">Self-Education:</div>
-                                <div class="right">Self-taught in every software package listed in <i>Software/Languages</i>. Actively using many of these tools semi-professionally
-                                </div>
-                            </div>
-                        <hr>
-                        </div>
-                    </div>
-
-                    <div class="collapsible-section">
-                        <button class="collapsible">
-                            <h2><b>Software / Languages</b></h2>
-                        </button>
-                        <div class="content">
-                        <hr>
-                            <div class="table-row">
-                                <div class="left">Software</div>
-                                <div class="right">Excel • Sheets • Photoshop • Premiere • Illustrator • InDesign • Figma • Reaper • Audacity • Blender • Unity
-                                </div>
-                            </div>
-                        <hr>
-                            <div class="table-row">
-                                <div class="left">Languages:</div>
-                                <div class="right">C# • Python •  R • SQL • Java • HTML • CSS • JavaScript 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="collapsible-section">
-                        <button class="collapsible">
-                            <h2><b>About Me</b></h2>
-                        </button>
-                        <div class="content">
-                            <div class="table-row">
-                                <div class="left" style="font-weight: lighter;">I'm the guitarist and manager of a funk band called 
-                                    <a href="https://www.funky-lamp.com" target="_blank" style="color: white;">Funky Lamp</a>. I also work with a local 
-                                    organization called <a href="https://pg.media" target="_blank" style="color: white;">Post Genre</a> where I am responsible for our visual branding and web development. 
-                                    We recently launched <a href="https://www.havenvenue.com" style="color: white;">HAVEN</a>, Oakland's first independent music venue in twenty years. I've been 
-                                    a visual artist all my life, and have had the opportunity to apply this intuition in many of my projects. 
-                                    <br> <br>In my free time, you'll find me cooking, reading, or bartering on
-                                    Facebook Marketplace. At one time, I was also a 3D Prop & Environment artist. 
-                                    Lastly, as you can probably see, I mess around with web development. 
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </h3>
-            </div>
-
+            
+         
         
         </section>
 
@@ -196,9 +76,9 @@
 
 s
         <!-- React bundle will mount here -->
-        <script type="module" src="main.jsx"></script>
+        <script type="module" src="main.tsx"></script>
 
-        <div id="gif-gallery-root"></div>
+        <div id="gallery-root"></div>
 
         </section>
 
@@ -245,28 +125,6 @@ s
         }
     </script>
 
-    <script>
-    document.addEventListener("scroll", function () {
-        // Get the icon and the points
-        const icon = document.getElementById("timeline-icon");
-        const points = document.querySelectorAll(".timeline-point");
-        const sections = document.querySelectorAll("section");
-      
-        // Get the current scroll position
-        let currentScroll = window.pageYOffset;
-      
-        sections.forEach((section, index) => {
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.offsetHeight;
-      
-          // Check if the current scroll position is within this section
-          if (currentScroll >= sectionTop -300 && currentScroll < sectionTop + sectionHeight -400) {
-            const point = points[index];
-            icon.style.top = point.offsetTop + "px"; // Move icon to the corresponding timeline point
-          }
-        });
-      });
-      </script>
 
     <script>
     document.addEventListener('DOMContentLoaded', function() {

@@ -9,25 +9,19 @@
   
   .gif-container .gif, 
   .gif-container .still {
-    opacity: 0;
+    opacity: 1;
     position: absolute;
     top: 0;
     left: 0;
     transition: filter 0.3s ease;
+    overflow: hidden;
+
   }
   
-  .gif-container:hover .gif {
+
+  .gif-container .gif {
     opacity: 1;
     filter: grayscale(0%);
-  }
-  
-  .gif-container:hover .still {
-    opacity: 0;
-  }
-  
-  .gif-container .gif {
-    opacity: 0;
-    filter: grayscale(100%);
   }
   
   .gif-container .still {
